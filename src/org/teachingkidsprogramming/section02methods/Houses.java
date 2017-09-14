@@ -1,7 +1,7 @@
 package org.teachingkidsprogramming.section02methods;
 
 import org.teachingextensions.logo.Tortoise;
-import org.teachingextensions.logo.utils.ColorUtils.PenColors.Grays;
+import org.teachingextensions.logo.utils.ColorUtils.PenColors.Reds;
 
 public class Houses
 {
@@ -18,7 +18,7 @@ public class Houses
   }
   private static void drawHouse(int height)
   {
-    Tortoise.setPenColor(Grays.LightGray);
+    Tortoise.setPenColor(Reds.Red);
     Tortoise.move(height);
     Tortoise.turn(90);
     Tortoise.move(30);
