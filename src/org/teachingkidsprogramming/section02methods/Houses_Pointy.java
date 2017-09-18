@@ -10,7 +10,7 @@ public class Houses_Pointy
   {
     Tortoise.show();
     Tortoise.setSpeed(10);
-    Tortoise.setX(200);
+    Tortoise.setX(0);
     int height = 40;
     drawHouseFlatRoof(height);
     drawHousePointyRoof(120);
