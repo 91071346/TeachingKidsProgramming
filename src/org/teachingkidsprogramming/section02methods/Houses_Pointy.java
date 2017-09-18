@@ -53,7 +53,7 @@ public class Houses_Pointy
   }
   private static void drawHouseSlantedRoof(int height)
   {
-    Tortoise.move(30);
+    Tortoise.move(20);
     Tortoise.turn(50);
     Tortoise.move(20);
     Tortoise.turn(90);
