@@ -13,7 +13,7 @@ public class HousesB
     int height = 40;
     drawHouseFlatRoof(height);
     drawHousePointyRoof(140);
-    drawHouseFlatRoof(50);
+    drawHouseSlantedRoof(50);
     drawHouseFlatRoof(20);
     drawHousePointyRoof(100);
     drawHousePointyRoof(140);
