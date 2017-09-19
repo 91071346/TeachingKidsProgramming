@@ -1,9 +1,7 @@
 package org.teachingkidsprogramming.section02methods;
 
 import org.teachingextensions.logo.Tortoise;
-import org.teachingextensions.logo.utils.ColorUtils.PenColors.Blues;
-import org.teachingextensions.logo.utils.ColorUtils.PenColors.Pinks;
-import org.teachingextensions.logo.utils.ColorUtils.PenColors.Purples;
+import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 
 public class HousesB
 {
@@ -15,7 +13,7 @@ public class HousesB
     int height = 40;
     drawHouseFlatRoof(height);
     drawHousePointyRoof(140);
-    drawHouseFlatRoof(90);
+    drawHouseFlatRoof(50);
     drawHouseFlatRoof(20);
     drawHousePointyRoof(100);
     drawHousePointyRoof(140);
@@ -34,7 +32,7 @@ public class HousesB
   }
   private static void drawHouseSlantedRoof(int height)
   {
-    Tortoise.setPenColor(Blues.DarkBlue);
+    Tortoise.setPenColor(PenColors.getRandomColor());
     Tortoise.move(height);
     drawSlantedRoof();
     Tortoise.turn(90);
@@ -43,7 +41,7 @@ public class HousesB
   }
   private static void drawHousePointyRoof(int height)
   {
-    Tortoise.setPenColor(Purples.Purple);
+    Tortoise.setPenColor(PenColors.getRandomColor());
     Tortoise.move(height);
     drawHousePointyRoof();
     Tortoise.move(height);
@@ -61,7 +59,7 @@ public class HousesB
   }
   private static void drawHouseFlatRoof(int height)
   {
-    Tortoise.setPenColor(Pinks.DeepPink);
+    Tortoise.setPenColor(PenColors.getRandomColor());
     Tortoise.move(height);
     drawFlatRoof();
     Tortoise.move(height);
