@@ -2,7 +2,6 @@ package org.teachingkidsprogramming.section02methods;
 
 import org.teachingextensions.logo.Tortoise;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors;
-import org.teachingextensions.virtualproctor.VirtualProctor;VirtualProctor.setClassName("Palm Digital");VirtualProctor.setName("Andrew NUNEZ");
 
 @SuppressWarnings("unused")
 public class TriangleShell
