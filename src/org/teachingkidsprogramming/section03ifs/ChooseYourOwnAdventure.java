@@ -21,15 +21,15 @@ public class ChooseYourOwnAdventure
     if ("wake up".equalsIgnoreCase(action))
     {
       //          wakeUp (recipe below) --#2.1
-      //          ------------- Recipe for wakeUp --#2.2
-      //              Tell the user "You wake up and have a boring day. The end." --#1
-      //          ------------- End of wakeUp recipe --#2.3
+      wakeUp();
     }
     else if ("explore".equalsIgnoreCase(action))
     {
       //      approachOoze (recipe below) --#4.1
       //      ------------- Recipe for approachOoze --#4.2
       //         Tell the user "You approach a glowing, green bucket of ooze. Worried that you will get in trouble, you pick up the bucket." --#3
+      MessageBox.showMessage(
+          "You approach a glowing, green bucket of ooze. Worried that you will get in trouble, you pick up the bucket.");
       //         Ask the user "Do you want to pour the ooze into the 'backyard' or 'toilet'?" --#7
       //         If they answer "toilet" --#8.1
       //            pourIntoToilet (recipe below) --#12.1
@@ -66,6 +66,13 @@ public class ChooseYourOwnAdventure
       //         Tell the user "You don't know how to read directions. You can't play this game. The end." --#5
       //      ------------- End of endStory recipe --#6.3
     }
+  }
+  private static void wakeUp()
+  {
+    //          ------------- Recipe for wakeUp --#2.2
+    //              Tell the user "You wake up and have a boring day. The end." --#1
+    MessageBox.showMessage("You wake up and have a boring day. The end.");
+    //          ------------- End of wakeUp recipe --#2.3
   }
   private static void animateStartStory()
   {
