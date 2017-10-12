@@ -24,26 +24,13 @@ public class ChooseYourOwnAdventure
     }
     else if ("explore".equalsIgnoreCase(action))
     {
-      //Tell the user "You approach a glowing, green bucket of ooze. Worried that you will get in trouble, you pick up the bucket." --#3
       MessageBox.showMessage(
           "You approach a glowing, green bucket of ooze. Worried that you will get in trouble, you pick up the bucket.");
       endStory();
       String answer = MessageBox.askForTextInput("Do you want to pour the ooze into the 'backyard' or 'toilet'?");
       if ("toilet".equalsIgnoreCase(answer))
       {
-        //            pourIntoToilet (recipe below) --#12.1
-        //            ------------- Recipe for pourIntoToilet --#12.2
-        MessageBox.showMessage(
-            "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste.");
-        //               Ask the user "Do you want to train to be a NINJA?  'Yes' or 'HECK YES'?" --#11
-        MessageBox.showMessage("Do you want to train to be a NINJA?  'Yes' or 'HECK YES'?");
-        //               If they answer "yes" --#13.1
-        //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#14
-        //               Otherwise, if they answer "heck yes" --#13.2
-        //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#15
-        //               Otherwise, if they answer anything else --#13.3
-        //                    endStory --#16
-        //            ------------- End of pourIntoToilet recipe --#12.3
+        pourIntoToliet();
       }
       else if ("backyard".equalsIgnoreCase(answer))
       {
@@ -68,17 +55,34 @@ public class ChooseYourOwnAdventure
     {
     }
   }
+  private static void pourIntoToliet()
+  {
+    MessageBox.showMessage(
+        "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste.");
+    String answer=MessageBox.askForTextInput("Do you want to train to be a NINJA?  'Yes' or 'HECK YES'?");
+    
+    //               If they answer "yes" --#13.1
+    if ("yes".equalsIgnoreCase(answer))
+    //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#14
+    //               Otherwise, if they answer "heck yes" --#13.2
+    else if
+    //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#15
+    //               Otherwise, if they answer anything else --#13.3
+    {
+      //         Tell the user "You don't know how to read directions. You can't play this game. The end." --#5
+    }
+    //                    endStory --#16
+    //            ------------- End of pourIntoToilet recipe --#12.3
+  }
   private static void endStory()
   {
     //      ------------- Recipe for endStory --#6.2
-    //         Tell the user "You don't know how to read directions. You can't play this game. The end." --#5
     MessageBox.showMessage("You don't know how to read directions. You can't play this game. The end.");
     //      ------------- End of endStory recipe --#6.3
   }
   private static void wakeUp()
   {
     //          ------------- Recipe for wakeUp --#2.2
-    //              Tell the user "You wake up and have a boring day. The end." --#1
     MessageBox.showMessage("You wake up and have a boring day. The end.");
     //          ------------- End of wakeUp recipe --#2.3
   }
