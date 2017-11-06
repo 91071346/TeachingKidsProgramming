@@ -20,55 +20,55 @@ public class DeepDive04Mastery
   public void theseNumbersCount() throws Exception
   {
     Integer number = 2;
-    Assert.assertEquals(number.getClass(), ______.class);
+    Assert.assertEquals(number.getClass(), Integer.class);
   }
   @Test
   public void textTypes() throws Exception
   {
     String text = "Beans";
-    Assert.assertEquals(text.getClass(), ______.class);
+    Assert.assertEquals(text.getClass(), String.class);
   }
   @Test
   public void theNumbersAfterTheDot() throws Exception
   {
     Double number = 2.3;
-    Assert.assertEquals(number.getClass(), ______.class);
+    Assert.assertEquals(number.getClass(), Double.class);
   }
   @Test
   public void everythingIsAnObject() throws Exception
   {
     Object number = 2.3;
-    Assert.assertEquals(number.getClass(), ______.class);
+    Assert.assertEquals(number.getClass(), Double.class);
   }
   @Test
   public void iMeanEverythingIsAnObject() throws Exception
   {
     Object number = 2;
-    Assert.assertEquals(number.getClass(), ______.class);
+    Assert.assertEquals(number.getClass(), Integer.class);
   }
   @Test
   public void iMeanEverySinglethingIsAnObject() throws Exception
   {
     Object number = "Everything";
-    Assert.assertEquals(number.getClass(), ______.class);
+    Assert.assertEquals(number.getClass(), String.class);
   }
   @Test
   public void integersAreATypeOfNumber() throws Exception
   {
     Number number = 2;
-    Assert.assertEquals(number.getClass(), ______.class);
+    Assert.assertEquals(number.getClass(), Integer.class);
   }
   @Test
   public void doublesAreATypeOfNumber() throws Exception
   {
     Number number = 2.0;
-    Assert.assertEquals(number.getClass(), ______.class);
+    Assert.assertEquals(number.getClass(), Double.class);
   }
   @Test
   public void addingIntegers() throws Exception
   {
     Number number = 2 + 3;
-    Assert.assertEquals(number.getClass(), ______.class);
+    Assert.assertEquals(number.getClass(), Number.class);
   }
   @Test
   public void addingDoubles() throws Exception
