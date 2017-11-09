@@ -68,7 +68,7 @@ public class DeepDive04Mastery
   public void addingIntegers() throws Exception
   {
     Number number = 2 + 3;
-    Assert.assertEquals(number.getClass(), Number.class);
+    Assert.assertEquals(number.getClass(), ______.class);
   }
   @Test
   public void addingDoubles() throws Exception
