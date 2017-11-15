@@ -3,7 +3,7 @@ package org.teachingkidsprogramming.section05recursion;
 import org.teachingextensions.logo.Tortoise;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 
-public class RecursiveSquare
+public class RecursiveSquare2
 {
   public static void main(String[] args) throws Exception
   {
@@ -13,31 +13,33 @@ public class RecursiveSquare
     //
     Tortoise.setSpeed(10);
     double length = 100.0;
-    //  MakeASquare with the current length(recipe below) --#11.4
-    //
-    //  Create the makeASquare recipe --#11.1
-    mAS(length);
+    makeASquare(length);
   }
-  private static void mAS(double length)
+  private static void makeASquare(double length)
   {
+    //  If the current length is greater than 10 --#10.2
     if (length > 10)
     {
+      //      Run the recipe moveToTheSquareStart with the current length  --#4.3
       moveToTheSquareStart(length);
-      //
       for (int i = 0; i < 4; i++)
       {
         Tortoise.move(length);
-        mAS(length / 1.7);
+        //    MakeASquare with the current length divided by 1.7 (recipe below)--#11.3 
+        makeASquare(length / 1.7);
+        //      If the current process count is less than 3 (HINT: use 'i') --#9
         if (i < 3)
         {
           Tortoise.turn(90);
-          //
-          moveBackToCenter(length);
-          //
-          length = length * 2;
         }
       }
     }
+    //  MoveBackToCenter with the current length (recipe below)--#5.3
+    moveBackToCenter(length);
+    //
+    length = length * 2;
+    //
+    //  End of makeASquare recipe --#11.2
   }
   private static void moveBackToCenter(double length)
   {
