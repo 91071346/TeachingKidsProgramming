@@ -24,7 +24,6 @@ public class SpiderWeb
       //
       drawTriangle(length);
       //
-      //            Turn the tortoise 1/6th of 360 degrees to the right --#7
       Tortoise.turn(360 / 6);
       //            Increase the current length (of the line) by the current zoom --#8.1
     }
