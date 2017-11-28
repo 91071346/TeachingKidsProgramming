@@ -86,7 +86,7 @@ public class DeepDive04Mastery
   {
     Object number = "19 fought 20, " + 21;
     Assert.assertEquals(number.getClass(), String.class);
-    Assert.assertEquals(number, );
+    Assert.assertEquals(number, "19 fought 20, 21");
   }
   @Test
   public void convertingToText() throws Exception
