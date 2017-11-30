@@ -13,13 +13,13 @@ public class AdLibs
     //  Ask the user to enter a body part, save it as currentBodyPart --#6
     String currentBodyPart = MessageBox.askForTextInput("Enter a body part: ");
     //  Set the value of the currentStory to the word "Today " --#1.2
-    String currentStory = "Today";
+    String currentStory = "Today ";
     //  Add the words "I woke " + currentAdverb + ". " to the currentStory --#3
     currentStory = currentStory + "I woke " + currentAdverb + ". ";
     //  Add the words '"Then I " + currentEdVerb + " " to the currentStory --#5
     currentStory += "Then I " + currentEdVerb + " ";
     //  Add the words "my " + currentBodyPart + ". " to the current story --#7
-    currentBodyPart += currentBodyPart + "my " + currentBodyPart + ". ";
+    currentBodyPart += currentBodyPart + " my " + currentBodyPart + ". ";
     //  Show the currentStory in a message box as a message --#1.1
     MessageBox.showMessage(currentStory);
   }
