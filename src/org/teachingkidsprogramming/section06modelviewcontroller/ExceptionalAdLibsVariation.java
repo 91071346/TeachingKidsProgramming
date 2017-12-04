@@ -8,6 +8,7 @@ public class ExceptionalAdLibsVariation
   {
     String adverb = askAdverb();
     String edverb = askEdVerb();
+    String bodyPart = askBodyPart();
   }//end of main
   private static String askAdverb()
   {
@@ -37,5 +38,5 @@ public class ExceptionalAdLibsVariation
       MessageBox.showMessage("Brain can't even look at you without disgust, try again");
     }
     return EdVerb;
-  }
+  }//end of main
 }//end of class

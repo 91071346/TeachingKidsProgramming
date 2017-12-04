@@ -1,11 +1,15 @@
 package org.teachingkidsprogramming.section07objects;
 
+import java.util.ArrayList;
+
+import org.teachingextensions.WindowUtils.MultiTurtleWindow;
+import org.teachingextensions.logo.Turtle;
+
 public class CloneTurtles
 {
   // Uncomment the two lines of code below to create a container and a window for your turtles --#1
-  // public ArrayList<Turtle> turtles = new ArrayList<Turtle>();
-  // public MultiTurtleWindow mtw     = new MultiTurtleWindow();
-  //
+  public ArrayList<Turtle> turtles = new ArrayList<Turtle>();
+  public MultiTurtleWindow mtw     = new MultiTurtleWindow();
   public CloneTurtles()
   {
     showSomeTurtles();
