@@ -2,19 +2,27 @@ package org.teachingkidsprogramming.section07objects;
 
 import org.teachingkidsprogramming.recipes.quizzes.graders.SpiderQuiz;
 import org.teachingkidsprogramming.recipes.quizzes.graders.SpiderWebQuizGrader;
-
+public class circleAround
 public class SpiderWebQuiz extends SpiderQuiz
 {
   @Override
   public void question1()
   {
-    //      Do the following the current number of times HINT: "number" is a variable name
-    //      Call circle()
-    //      Repeat
+    for (int i = 0; i < number; i++)
+    {
+      circle();
+    }
   }
   public void question2()
   {
     //      Create and then call a recipe called circleAround which 
+    {
+     for (int i = 0; i < 3; i++)
+    {
+      adjust();
+      circle();
+    } 
+    }
     //      Does the following 3 times
     //      Call adjust()
     //      Call question1

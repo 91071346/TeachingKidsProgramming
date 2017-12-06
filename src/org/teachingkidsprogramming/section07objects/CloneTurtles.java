@@ -18,7 +18,6 @@ public class CloneTurtles
   //
   private void showSomeTurtles()
   {
-    // Use a FOR loop to add your three turtles --#4.1
     for (int i = 0; i < 3; i++)
     {
       Turtle turtle = new Turtle();
@@ -38,20 +37,13 @@ public class CloneTurtles
       turtles.get(i).setX(i * 100 + 350);
       turtles.get(i).setY(i * 100 + 100);
     }
-    //
-    // Use a FOREACH loop to set values for all of your turtles --#7.1
     for (Turtle turtle : turtles)
     {
       turtle.setPenWidth(10);
       turtle.setSpeed(9);
       turtle.drawStar(100);
-      //      Set the pen width to 10 pixels -- #7.3
-      //      Set the turtle speed to 9 --#7.4
-      //      Have each turtle draw a star with a side that is 100 pixels --#7.5
-      // End Repeat --#7.2
     }
   }
-  //
   public static void main(String[] args)
   {
     new CloneTurtles();
