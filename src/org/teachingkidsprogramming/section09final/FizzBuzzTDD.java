@@ -18,7 +18,35 @@ public class FizzBuzzTDD
   @Test
   public void test1Returns1()
   {
-    //String result = FizzBuzzTDD.convert(1);
-    assertEquals(1, 0);
+    String result = FizzBuzzTDD.convert(1);
+    assertEquals("1", result);
+  }
+  @Test
+  public void test3ReturnsFizz()
+  {
+    String result = FizzBuzzTDD.convert(3);
+    assertEquals("Fizz", result);
+  }
+  @Test
+  public void test5ReturnBuzz()
+  {
+    String result = FizzBuzzTDD.convert(5);
+    assertEquals("Buzz", result);
+  }
+  @Test
+  public void test15ReturnsFizzBuzz()
+  {
+    String result = FizzBuzzTDD.convert(15);
+    assertEquals("FizzBuzz", result);
+  }
+  public static String convert(int num)
+  {
+    if (num % 15 == 0)
+      return "FizzBuzz";
+    if (num % 3 == 0)
+      return "Fizz";
+    if (num % 5 == 0)
+      return "Buzz";
+    return num + "";
   }
 }
